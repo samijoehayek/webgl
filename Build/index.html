@@ -66,7 +66,7 @@
    cacheControl: function (url) {
      // Caching enabled for .data and .bundle files.
      // Revalidate if file is up to date before loading from cache
-     if (url.match(/\.data/) || url.match(/\.bundle/) || url.match(/\.wasm/)) {
+     if (url.match(/\.data/) || url.match(/\.bundle/) || url.match(/\.wasm/) || url.match(/\.unityweb/)) {
          return "must-revalidate";
      }
 
@@ -133,7 +133,7 @@
             };
 
       document.body.appendChild(script);
-	  
+
     </script>
   </body>
 </html>
